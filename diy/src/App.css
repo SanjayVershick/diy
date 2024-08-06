@@ -1,0 +1,33 @@
+/* App.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b6b5b5;
+    position: fixed;
+  }
+  
+  .app {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #c4c1c1;
+    position: fixed;
+  }
+  
+  h1 {
+    font-size: 2.5em; /* Increase header size */
+    color: #333;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .app {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2em; /* Smaller header size for smaller screens */
+    }
+  }
+  

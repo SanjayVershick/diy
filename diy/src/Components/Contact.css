@@ -1,0 +1,179 @@
+/* Global body styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Ensure that .con covers the entire viewport */
+.con {
+    background-image: url('../assets/conaa.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fix the background image while scrolling */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact container styles */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.9); /* Slightly transparent background to make text readable */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Other styles as needed */
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 1rem; /* Space between flex items */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: #555;
+    font-size: 12px;
+    flex: 1; /* Make items grow to fill available space */
+    margin: 0 1rem; /* Add horizontal margin to create spacing between items */
+}
+
+.contact-icon {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+    }
+}
+/* Global body styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Ensure that .con covers the entire viewport */
+.con {
+    background-image: url('../assets/conaa.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fix the background image while scrolling */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact container styles */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.9); /* Slightly transparent background to make text readable */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Other styles as needed */
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #333;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 1rem; /* Space between flex items */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: #555;
+    font-size: 15px;
+    flex: 1; /* Make items grow to fill available space */
+    margin: 0 1rem; /* Add horizontal margin to create spacing between items */
+}
+
+.contact-icon {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+    }
+}

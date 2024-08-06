@@ -1,0 +1,57 @@
+/* Add this to your CSS file for Navi */
+
+.navi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .navbar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #030303;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .navbar img {
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .navbar h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.9em;
+    margin-right: auto; /* Push other items to the right */
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 10px;
+    font-size: x-large;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .navbar ul li a:hover {
+    color: #FF6347; /* Change to tomato color on hover */
+  }
+  

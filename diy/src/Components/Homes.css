@@ -1,0 +1,388 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #FF6347;
+}
+
+/* Category Card Styling */
+.category-card {
+  cursor: pointer;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.2s, background-color 0.2s;
+  background-color: white;
+}
+
+.category-card h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.category-card:hover, .category-card.active {
+  transform: scale(1.05);
+  border-color: #FF6347;
+  background-color: #ff7d03;
+}
+
+/* Crafts Link Button */
+.crafts-link {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: blue;
+  padding: 25px 70px;
+  text-align: center;
+  display: inline-block;
+  margin: 8px 4px;
+  border-radius: 50px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.crafts-link:hover {
+  background-color: darkblue;
+}
+
+/* Tutorial Gallery */
+.tutorial-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 1500px;
+  max-height: 1500px;
+  overflow-y: auto;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.video-card {
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.video-card img {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+  border-radius: 8px;
+}
+
+.video-card h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  color: #FF6347;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .tutorial-gallery {
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+  }
+
+  .video-card {
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar ul li {
+    margin: 5px 0;
+  }
+
+  .home {
+    padding: 10px;
+  }
+
+  .intro-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .intro-image,
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .intro-text {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.footer a:hover {
+  color: #FF6347;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Intro Section */
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.intro-image {
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.intro-text {
+  max-width: 50%;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.intro-text h2 {
+  font-size: 1.2em;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Learn More Button */
+.learn-more-button {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.learn-more-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.learn-more-button:hover {
+  background-color: #FF4500;
+}
+
+/* Explore Crafts Section */
+.explore {
+  padding: 20px;
+  text-align: center;
+}
+
+.explore h1 {
+  font-size: 75px;
+  color: #1c1a1a;
+}
+
+.explore h2 {
+  font-size: 50px;
+  color: #1c1a1a;
+}
+
+.video-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.video-card {
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.video-card img {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.video-card h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  color: #FF6347;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+  .video-card {
+    width: 100%;
+  }
+}
+
+/* Category Card and Tutorial Gallery Styling */
+.category-card {
+  cursor: pointer;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.2s, background-color 0.2s;
+  background-color: white;
+}
+
+.category-card h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.category-card:hover, .category-card.active {
+  transform: scale(1.05);
+  border-color: #FF6347;
+  background-color: #ff7d03;
+}
+
+/* Other Styles */
+.content {
+  margin-top: -10px;
+}
+
+.content h1 {
+  font-size: 75px;
+  color: #1c1a1a;
+}
+
+.home {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Craft Categories and Buttons */
+.craft-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.craft-button {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.craft-button:hover {
+  background-color: #FF4500;
+}
+
+/* New Styles for Buttons in Landscape */
+.craft-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.craft-button {
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .craft-buttons {
+    flex-wrap: wrap;
+  }
+
+  .craft-button {
+    flex: 1 1 100%;
+  }
+}
